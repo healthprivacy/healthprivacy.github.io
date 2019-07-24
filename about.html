@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 127.0.0.1:5000/about by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Jul 2019 05:56:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Privacy in Health Apps</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="static/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="static/css/AdminLTE.css">
+    <!-- Custom style -->
+    <link rel="stylesheet" href="static/css/custom.css">
+    <!-- AdminLTE Skins -->
+    <link rel="stylesheet" href="static/css/skin-black.min.css">
+    <!-- Morris chart -->
+    <link rel="stylesheet" href="static/css/morris.css">
+    <!-- jvectormap -->
+    <link rel="stylesheet" href="static/css/jquery-jvectormap.css">
+    <!-- Date Picker -->
+    <link rel="stylesheet" href="static/css/bootstrap-datepicker.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="static/css/daterangepicker.css">
+    <!-- bootstrap wysihtml5 - text editor -->
+    <link rel="stylesheet" href="static/css/bootstrap3-wysihtml5.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="static/css/dataTables.bootstrap.min.css">
+
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+    
+
+
+</head>
+
+<body class="hold-transition skin-black sidebar-mini">
+    <div class="wrapper">
+        <header class="main-header">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"></span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"></span>
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                  </a>
+            </nav>
+        </header>
+
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- sidebar menu: : style can be found in sidebar.less -->
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="header">MAIN NAVIGATION</li>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa fa-home"></i> <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="hosts.html">
+                            <i class="fa fa-server"></i> <span>Hosts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="apps-vs-sources.html">
+                            <i class="fa fa-th"></i> <span>Sources of Information</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="stats.html">
+                            <i class="fa fa-pie-chart"></i> <span>Statistics</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <i class="fa fa-question-circle"></i> <span>About</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+
+        
+
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1><i class="fa fa-question-circle"></i> What's this?</h1>
+        <ol class="breadcrumb">
+            <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+            <li class="active">About</li>
+        </ol>
+    </section>
+
+    <section class="content">
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box box-solid">
+                    <div class="box-header with-border">
+                        <h2 class="box-title">Research Project</h2>
+                    </div>
+                    <div class="box-body">
+                        <p>
+
+                            Mobile health applications (apps) are a booming market in Australia and may be increasingly
+                            integrated into health services, workplaces, and insurance programs. Health app developers
+                            routinely <strong>share consumer data</strong> with multiple third parties including
+                            advertisers, data aggregators, and commercial partners as part of their business model.
+                            There is little transparency around third-party data sharing and health apps routinely
+                            <strong>fail to provide privacy assurances</strong>, yet request multiple forms of personal
+                            information.
+
+                        </p>
+                        <p>
+
+                            There are also security concerns related to health-related apps. One study of health apps
+                            endorsed by the UK National Health Service found that the majority transmitted information
+                            to online services, but two thirds of sampled apps transmitted data in an
+                            <strong>unencrypted format</strong>.
+
+                        </p>
+                        <p>
+
+                            Apps providing medicines-related information and services may be particularly vulnerable to
+                            privacy and security threats. Medicines-related apps that target health professionals are of
+                            particular interest to pharmaceutical companies, which can offer tailored advertising and
+                            glean insights into prescribing habits. Apps targeting consumers can deliver a
+                            <strong>detailed account of a patient's health history</strong>, which could put consumers
+                            at risk for employment, insurance or education-related discrimination.
+
+                            The <strong>goal</strong> of this project is to identify <strong>systemic privacy and
+                            security risks</strong> to consumers and health professionals that arise through the use of
+                            medicines-related apps.
+
+                        </p>
+
+                        <p>
+                            We present the findings of this project in a research paper: <br>
+
+                            <b><em>"Data sharing practices of medicines related apps and the mobile ecosystem: traffic, content, and network analysis"</em></b>
+                            <br>
+                            [<a href="https://www.bmj.com/content/bmj/364/bmj.l920.full.pdf">PDF</a>]
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-xs-12">
+                    <div class="box box-solid">
+                        <div class="box-header with-border">
+                            <h2 class="box-title">Disclosure and Developer Responses</h2>
+                        </div>
+                        <div class="box-body">
+                            <p>
+                                As part of our research project, we conducted a security analysis of the sampled apps. We elected to advise four developers
+                                of vulnerabilities detected in their apps related to insecure login or storage. We considered other security features, such as
+                                (lack of) end-to-end encryption, as non critical best practices, thus not requiring official disclosure.
+
+                                As these vulnerabilities represent a risk to consumers, we planned to publish our analyses within 90 days of issuing the advisories,
+                                however, wished to give the developers the opportunity to address these vulnerabilities.
+                            </p>
+
+                            <p>
+                                We wish to acknowledge the efforts of the following developers in providing a fix and informing consumers that updates of these apps
+                                have been issued:
+                            </p>
+
+                            <p>
+                                <ul>
+                                    <li>
+                                        MIMS for Android (MIMS Australia): Updated August 2018, see v2.0.11.
+                                    </li>
+                                    <li>
+                                        Med Helper Pro Pill Reminder (Manyeta): Updated July 2018, see v2.8.9.
+                                    </li>
+                                    <li>
+                                        ListMeds Free (Fourth Career Solutions): Updated March 2019.
+                                    </li>
+                                    <li>
+                                        My PillBox(Meds&Pill Reminder) (Master B): No longer available in the Google Play Store.
+                                    </li>
+
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box box-solid">
+                    <div class="box-header with-border">
+                        <h2 class="box-title">People</h2>
+                    </div>
+                    <div class="box-body">
+                        <ul>
+                            <li>
+                                <a href="http://www.quinngrundy.com/">Quinn Grundy</a> -  University of Toronto & University of Sydney
+                            </li>
+
+                            <li>
+                                <a href="https://sydney.edu.au/charles-perkins-centre/our-research/research-groups/evidence-policy-and-influence-collaborative.html">Kellia Chiu</a> - University of Sydney
+                            </li>
+
+                            <li>
+                                <a href="http://sydney.edu.au/science/people/fabian.held.php">Fabian Held</a> - University of Sydney
+                            </li>
+
+                            <li>
+                                <a href="https://conand.me/">Andrea Continella</a> - Unversity of California, Santa Barbara
+                            </li>
+
+                            <li>
+                                <a href="https://sydney.edu.au/charles-perkins-centre/our-research/research-groups/evidence-policy-and-influence-collaborative.html">Lisa Bero</a> - University of Sydney
+                            </li>
+
+                            <li>
+                                <a href="https://ralphholz.science/">Ralph Holz</a> - University of Sydney
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="dataset" class="row">
+            <div class="col-xs-12">
+                <div class="box box-solid">
+                    <div class="box-header with-border">
+                        <h2 class="box-title">Dataset</h2>
+                    </div>
+                    <div class="box-body">
+                        <p>
+
+                            We purposefully sampled medicines-related  apps that were considered prominent in terms of
+                            being highly downloaded, rated in the top 100, or endorsed by credible organizations. We
+                            triangulated a number of sampling strategies to identify apps:
+
+                            <ul>
+                                <li>
+
+                                    Using a crawling program, we systematically sampled the top 100 listed free and paid
+                                    apps in the Medical store category of the Australian, Canadian, United States and
+                                    United Kingdom Google play stores on a weekly basis for one month (October 17, 2017
+                                    to November 17, 2017). One investigator screened these 800 apps for any app names
+                                    that appeared to be medicines-related. The list of medicines-related app names were
+                                    then screened independently by two investigators according to the
+                                    inclusion/exclusion criteria, using the information in the app store descriptions.
+
+                                </li>
+                                <li>
+
+                                    We examined the websites of health professional associations, medicines-related not-
+                                    for-profit organizations (NPS MedicineWise), curated app libraries (iMedicalApps,
+                                    myhealthapps.net), app reviews in the scientific literature, and polled our networks
+                                    of practicing pharmacists  and sampled any recommended or endorsed apps.
+
+                                </li>
+                            </ul>
+
+                            After assembling a list of prominent, medicines-related apps, we screened eligible apps
+                            according to the following inclusion criteria:
+
+                            <ul>
+                                <li>
+
+                                    Pertains to medicines such as managing medication lists, reminders, medicines or
+                                    prescribing information.
+
+                                </li>
+                                <li>
+
+                                    Available for the Android platform in Google Play.
+
+                                </li>
+                                <li>
+
+                                    The app requested at least one dangerous permission, as defined by Google Play, or
+                                    claim to collect or share personal data.
+
+                                </li>
+                                <li>
+
+                                    The app had some degree of interactivity with the user (i.e. had functionality
+                                    beyond providing information such as scheduling, reminders, personalized content,
+                                    social functions).
+
+                                </li>
+                            </ul>
+
+                            Apps were excluded if:
+
+                            <ul>
+                                <li>
+
+                                    They pertained exclusively to a single company (i.e. pharmacy, insurance plan or
+                                    electronic health record).
+
+                                </li>
+                                <li>
+
+                                    Were restricted to use in a single country.
+
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box box-solid">
+                    <div class="box-header with-border">
+                        <h2 class="box-title">Sources of Private Information</h2>
+                    </div>
+                    <div class="box-body">
+                        <p>
+                            List of the sources of private information that we tracked during out study. While some of
+                            them clearly regard consumers private data, other may seem irrelevant from a privacy
+                            perspective. However, when combined such information can reveal users characteristics and
+                            can be used to identify them.
+                        </p>
+                        <dl class="dl-horizontal">
+
+                            <dt>android_id</dt>
+                            <dd>Unique ID to each Android device. For instance, it is used to identify devices for market downloads.</dd>
+
+                            <dt>birthday</dt>
+                            <dd>User birthday.</dd>
+
+                            <dt>browsing</dt>
+                            <dd>App-related activity performed by the user (e.g., view pharmacies, search for medicines).</dd>
+
+                            <dt>carrier</dt>
+                            <dd>Mobile network operator, provider of network communications services (e.g., Vodafone).</dd>
+
+                            <dt>connection_type</dt>
+                            <dd>Cellular data or WiFi.</dd>
+
+                            <dt>country</dt>
+                            <dd>Country in which the device is located (e.g., Australia).</dd>
+
+                            <dt>course-grain-location</dt>
+                            <dd>Non precise location. Usually tells only the city in which the device is located (e.g., Sydney).</dd>
+
+                            <dt>device_id</dt>
+                            <dd>IMEI code of the device.</dd>
+
+                            <dt>device_name</dt>
+                            <dd>Name of the device (e.g., Google Pixel).</dd>
+
+                            <dt>doctor-name</dt>
+                            <dd>Information about the user's doctor (e.g., name).</dd>
+
+                            <dt>doses</dt>
+                            <dd>Medicines doses (100 mg Aspirin per day).</dd>
+
+                            <dt>e-mail</dt>
+                            <dd>User E-mail address.</dd>
+
+                            <dt>feelings</dt>
+                            <dd>User current feelings (e.g., happy, sad).</dd>
+
+                            <dt>gender</dt>
+                            <dd>User gender.</dd>
+
+                            <dt>name & lastname</dt>
+                            <dd>User name and lastname.</dd>
+
+                            <dt>med-conditions</dt>
+                            <dd>User medical conditions (e.g., past diseases).</dd>
+
+                            <dt>meds-instruction</dt>
+                            <dd>Instructions on how to take medicines (e.g., after dinner, in the morning).</dd>
+
+                            <dt>meds-list</dt>
+                            <dd>List of (prescripted) medicines taken by the user.</dd>
+
+                            <dt>meds-schedule</dt>
+                            <dd>Times for medicined (e.g., 8.00 PM Aspirin).</dd>
+
+                            <dt>os_version</dt>
+                            <dd>Device Android version.</dd>
+
+                            <dt>personal-conditions</dt>
+                            <dd>User personal conditions (e.g., smoker, pregnant).</dd>
+
+                            <dt>personal-factors</dt>
+                            <dd>User personal factors (e.g., height, weight, blood pressure, blood type).</dd>
+
+                            <dt>pharmacy-name</dt>
+                            <dd>Information about the user favorite pharmacies (e.g., name).</dd>
+
+                            <dt>symptoms</dt>
+                            <dd>User symptoms (e.g., headache).</dd>
+
+                            <dt>timezone</dt>
+                            <dd>Timezone in which the device is located (e.g., GMT+11).</dd>
+
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <strong>Copyright &copy; 2018 University of Sydney.</strong> All rights
+            reserved.
+        </footer>
+    </div>
+ 
+    <!-- jQuery 3 -->
+    <script src="static/js/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="static/js/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+      $.widget.bridge('uibutton', $.ui.button);
+    </script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="static/js/bootstrap.min.js"></script>
+    <!-- Morris.js charts -->
+    <script src="static/js/raphael.min.js"></script>
+    <script src="static/js/morris.min.js"></script>
+    <!-- Sparkline -->
+    <script src="static/js/jquery.sparkline.min.js"></script>
+    <!-- jvectormap -->
+    <script src="static/js/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="static/js/jquery-jvectormap-world-mill-en.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="static/js/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="static/js/moment.min.js"></script>
+    <script src="static/js/daterangepicker.js"></script>
+    <!-- datepicker -->
+    <script src="static/js/bootstrap-datepicker.min.js"></script>
+    <!-- Bootstrap WYSIHTML5 -->
+    <script src="static/js/bootstrap3-wysihtml5.all.min.js"></script>
+    <!-- Slimscroll -->
+    <script src="static/js/jquery.slimscroll.min.js"></script>
+    <!-- FastClick -->
+    <script src="static/js/fastclick.js"></script>
+    <!-- AdminLTE App -->
+    <script src="static/js/adminlte.min.js"></script>
+    <!-- DataTables -->
+    <script src="static/js/jquery.dataTables.min.js"></script>
+    <script src="static/js/dataTables.bootstrap.min.js"></script>
+
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <!-- <script src="/static/js/dashboard.js"></script> -->
+    <!-- AdminLTE for demo purposes -->
+    <!-- <script src="/static/js/demo.js"></script> -->
+
+    
+
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:5000/about by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Jul 2019 05:56:08 GMT -->
+</html>

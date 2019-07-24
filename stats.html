@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 127.0.0.1:5000/stats by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Jul 2019 05:56:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Privacy in Health Apps</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="static/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="static/css/AdminLTE.css">
+    <!-- Custom style -->
+    <link rel="stylesheet" href="static/css/custom.css">
+    <!-- AdminLTE Skins -->
+    <link rel="stylesheet" href="static/css/skin-black.min.css">
+    <!-- Morris chart -->
+    <link rel="stylesheet" href="static/css/morris.css">
+    <!-- jvectormap -->
+    <link rel="stylesheet" href="static/css/jquery-jvectormap.css">
+    <!-- Date Picker -->
+    <link rel="stylesheet" href="static/css/bootstrap-datepicker.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="static/css/daterangepicker.css">
+    <!-- bootstrap wysihtml5 - text editor -->
+    <link rel="stylesheet" href="static/css/bootstrap3-wysihtml5.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="static/css/dataTables.bootstrap.min.css">
+
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+    
+
+
+</head>
+
+<body class="hold-transition skin-black sidebar-mini">
+    <div class="wrapper">
+        <header class="main-header">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"></span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"></span>
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                  </a>
+            </nav>
+        </header>
+
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- sidebar menu: : style can be found in sidebar.less -->
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="header">MAIN NAVIGATION</li>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa fa-home"></i> <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="hosts.html">
+                            <i class="fa fa-server"></i> <span>Hosts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="apps-vs-sources.html">
+                            <i class="fa fa-th"></i> <span>Sources of Information</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="stats.html">
+                            <i class="fa fa-pie-chart"></i> <span>Statistics</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <i class="fa fa-question-circle"></i> <span>About</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+
+        
+
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1><i class="fa fa-bar-chart"></i> Statistics</h1>
+        <ol class="breadcrumb">
+            <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+            <li class="active">Statistics</li>
+        </ol>
+    </section>
+
+    <section class="content">
+
+        <div class="row">
+            <div class="box box-success">
+                <div class="box-header with-border">
+                    <h3 class="box-title">HTTPS vs. HTTP (per source)</h3>
+                </div>
+                <div class="box-body chart-responsive">
+                    <div class="chart" id="http-s-bar-chart" style="height: 300px;"></div>
+                </div>
+            </div>
+        </div>
+
+<!--         <div class="row">
+            <div class="col-md-6">
+                <div class="box box-success">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Most used Ciphersuites</h3>
+                    </div>
+                    <div class="box-body chart-responsive">
+                        <div class="chart" id="ciphersuites-bar-chart" style="height: 300px;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="box box-solid bg-light-blue-gradient">
+                    <div class="box-header">
+                        <i class="fa fa-map-marker"></i>
+                        <h3 class="box-title">
+                            Destination Hosts
+                        </h3>
+                    </div>
+
+                    <div class="box-body">
+                        <div id="hosts-map" style="height: 300px; width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+    </section>
+
+
+
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <strong>Copyright &copy; 2018 University of Sydney.</strong> All rights
+            reserved.
+        </footer>
+    </div>
+ 
+    <!-- jQuery 3 -->
+    <script src="static/js/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="static/js/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+      $.widget.bridge('uibutton', $.ui.button);
+    </script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="static/js/bootstrap.min.js"></script>
+    <!-- Morris.js charts -->
+    <script src="static/js/raphael.min.js"></script>
+    <script src="static/js/morris.min.js"></script>
+    <!-- Sparkline -->
+    <script src="static/js/jquery.sparkline.min.js"></script>
+    <!-- jvectormap -->
+    <script src="static/js/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="static/js/jquery-jvectormap-world-mill-en.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="static/js/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="static/js/moment.min.js"></script>
+    <script src="static/js/daterangepicker.js"></script>
+    <!-- datepicker -->
+    <script src="static/js/bootstrap-datepicker.min.js"></script>
+    <!-- Bootstrap WYSIHTML5 -->
+    <script src="static/js/bootstrap3-wysihtml5.all.min.js"></script>
+    <!-- Slimscroll -->
+    <script src="static/js/jquery.slimscroll.min.js"></script>
+    <!-- FastClick -->
+    <script src="static/js/fastclick.js"></script>
+    <!-- AdminLTE App -->
+    <script src="static/js/adminlte.min.js"></script>
+    <!-- DataTables -->
+    <script src="static/js/jquery.dataTables.min.js"></script>
+    <script src="static/js/dataTables.bootstrap.min.js"></script>
+
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <!-- <script src="/static/js/dashboard.js"></script> -->
+    <!-- AdminLTE for demo purposes -->
+    <!-- <script src="/static/js/demo.js"></script> -->
+
+    
+
+    <script>
+        $(function () {
+            "use strict";
+
+            // HTTP(S) BAR CHART
+            var https_bar = new Morris.Bar({
+                element: 'http-s-bar-chart',
+                resize: true,
+                data: [
+                    
+                        {y: 'android_id', a: 16, b: 0},
+                    
+                        {y: 'birthday', a: 3, b: 0},
+                    
+                        {y: 'browsing', a: 19, b: 9},
+                    
+                        {y: 'carrier', a: 4, b: 0},
+                    
+                        {y: 'connection-type', a: 3, b: 0},
+                    
+                        {y: 'connection_type', a: 3, b: 0},
+                    
+                        {y: 'country', a: 3, b: 0},
+                    
+                        {y: 'course-grain-location', a: 4, b: 0},
+                    
+                        {y: 'device_id', a: 5, b: 0},
+                    
+                        {y: 'device_name', a: 46, b: 3},
+                    
+                        {y: 'doctor-name', a: 1, b: 0},
+                    
+                        {y: 'doses', a: 4, b: 0},
+                    
+                        {y: 'e-mail', a: 15, b: 2},
+                    
+                        {y: 'feelings', a: 1, b: 0},
+                    
+                        {y: 'gender', a: 3, b: 0},
+                    
+                        {y: 'lastname', a: 3, b: 0},
+                    
+                        {y: 'med-conditions', a: 8, b: 0},
+                    
+                        {y: 'meds-instruction', a: 1, b: 0},
+                    
+                        {y: 'meds-instructions', a: 4, b: 0},
+                    
+                        {y: 'meds-list', a: 10, b: 0},
+                    
+                        {y: 'meds-schedule', a: 2, b: 0},
+                    
+                        {y: 'name', a: 2, b: 0},
+                    
+                        {y: 'os_version', a: 24, b: 1},
+                    
+                        {y: 'password', a: 1, b: 1},
+                    
+                        {y: 'personal-conditions', a: 2, b: 0},
+                    
+                        {y: 'personal-factors', a: 3, b: 0},
+                    
+                        {y: 'pharmacy-name', a: 1, b: 0},
+                    
+                        {y: 'symptoms', a: 2, b: 0},
+                    
+                        {y: 'timezone', a: 15, b: 0},
+                    
+                ],
+                barColors: ['#00a65a', '#f56954'],
+                xkey: 'y',
+                ykeys: ['a', 'b'],
+                labels: ['HTTPS', 'HTTP'],
+                hideHover: 'auto'
+            });
+
+            // CIPHERSUITES BAR CHART
+            var https_bar = new Morris.Bar({
+                element: 'ciphersuites-bar-chart',
+                resize: true,
+                data: [
+                    
+                        {y: 'ECDHE_RSA_WITH_AES_128_GCM_SHA256', a: 89},
+                    
+                        {y: 'RSA_WITH_AES_128_CBC_SHA', a: 10},
+                    
+                        {y: 'ECDHE_RSA_WITH_AES_128_CBC_SHA', a: 3},
+                    
+                ],
+                barColors: ['#00a65a'],
+                xkey: 'y',
+                ykeys: ['a'],
+                labels: ['#'],
+                hideHover: 'auto'
+            });
+
+            var hostsMapData = {
+                
+                    AU: 34,
+                
+                    DE: 1,
+                
+                    GB: 10,
+                
+                    IE: 3,
+                
+                    JP: 2,
+                
+                    US: 85,
+                
+            };
+            // World map by jvectormap
+            $('#hosts-map').vectorMap({
+                map: 'world_mill_en',
+                backgroundColor: 'transparent',
+                regionStyle: {
+                    initial: {
+                        fill: '#e4e4e4',
+                        'fill-opacity': 1,
+                        stroke: 'none',
+                        'stroke-width': 0,
+                        'stroke-opacity': 1
+                    }
+                },
+                series: {
+                    regions: [
+                        {
+                            values: hostsMapData,
+                            scale: ['#92c1dc', '#ebf4f9'],
+                            normalizeFunction: 'polynomial'
+                        }
+                    ]
+                },
+                onRegionLabelShow: function (e, el, code) {
+                    if (typeof hostsMapData[code] != 'undefined')
+                        el.html(el.html() + ': ' + hostsMapData[code] + ' hosts');
+                }
+            });
+
+        });
+    
+    </script>
+
+
+
+</body>
+
+<!-- Mirrored from 127.0.0.1:5000/stats by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Jul 2019 05:56:08 GMT -->
+</html>
